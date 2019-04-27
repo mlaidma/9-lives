@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {   
@@ -10,27 +11,45 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpForce = 8f;
     [SerializeField] float jumpGravity = 3f;
 
-    //bool canAttack = false;
+    [SerializeField] TextMeshProUGUI livesRemainingText;
+
+    [SerializeField] bool canSmack = false;
     //bool canJump = false;
     //bool canClimb = false;
 
     bool inAir = false;
+    int livesRemaining = 9;
 
 
     SpriteRenderer mySpriteRenderer;
     Rigidbody2D myRigidBody;
+    Animator myAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         myRigidBody = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
+        livesRemainingText.text = livesRemaining.ToString();
+
+        //debug
+        canSmack = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
+        Smack();
+    }
+
+    private void Smack()
+    {
+        if(Input.GetButtonDown("Fire1") && canSmack)
+        {
+            myAnimator.SetTrigger("smack");
+        }
     }
 
     private void Move()
@@ -39,10 +58,20 @@ public class Player : MonoBehaviour
         {
             var currentVelocity = myRigidBody.velocity;
             var deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * acceleration;
-      
+
+            if(deltaX < 0f)
+            {
+                transform.localScale= new Vector2(-1, transform.localScale.y);
+            }
+            else if (deltaX > 0f)
+            {
+                transform.localScale = new Vector2(1, transform.localScale.y);
+            }
+
             myRigidBody.velocity = new Vector2(
                 Mathf.Clamp(currentVelocity.x + deltaX, -maxSpeed, maxSpeed), 0);
-            mySpriteRenderer.flipX = deltaX <= 0 ? false : true;
+
+
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -77,6 +106,5 @@ public class Player : MonoBehaviour
             inAir = true;
         }
     }
-
 
 }
