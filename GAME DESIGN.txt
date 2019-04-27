@@ -56,6 +56,22 @@ TOYS
 
 
 
+TODO: 
+
+1) Move Mechanics
+2) GUI
+3) Toys
+	- GUI for toys
+4) Platforms
+5) At least a few levels
+6) Obstacles
+
+
+NICE TO HAVE 
+
+1) ....
+
+
 
 
 * You are a cat with nine lives and must carefully choose how to spend your lives to get through a puzzle/platformer

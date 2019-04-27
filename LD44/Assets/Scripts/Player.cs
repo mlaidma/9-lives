@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {   
-    [SerializeField] float acceleration = 25f;
-    [SerializeField] float maxSpeed = 12f;
-    [SerializeField] float jumpForce = 25f;
+    [SerializeField] float acceleration = 15f;
+    [SerializeField] float maxSpeed = 10f;
+    [SerializeField] float jumpForce = 8f;
     [SerializeField] float jumpGravity = 3f;
 
     //bool canAttack = false;
     //bool canJump = false;
     //bool canClimb = false;
 
-    bool isJumping = false;
+    bool inAir = false;
 
 
     SpriteRenderer mySpriteRenderer;
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        if(!isJumping)
+        if(!inAir)
         {
             var currentVelocity = myRigidBody.velocity;
             var deltaX = Input.GetAxis("Horizontal") * Time.deltaTime * acceleration;
@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 myRigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                isJumping = true;
+                inAir = true;
             }
         }
         else
@@ -65,8 +65,16 @@ public class Player : MonoBehaviour
     {
         if(collision.collider.tag == "Floor")
         {
-            isJumping = false;
+            inAir = false;
             myRigidBody.gravityScale = 1;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Floor")
+        {
+            inAir = true;
         }
     }
 
