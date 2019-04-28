@@ -58,19 +58,29 @@ TOYS
 
 TODO: 
 
-1) Move Mechanics
-2) GUI
-3) Toys
-	- GUI for toys
-4) Platforms
-5) At least a few levels
-6) Obstacles
+
+1) Buy the Toys
+	- Apply powerups
+	- decrement lives
+
+2) Create more levels
+	- Get to the other side
+		- Assets to drown
+			- Animations to drown
+	- Cross the road
+
+3) Start Screen
+	- With tutorials
+
+4) Credits
+
+5) Make the vase fall
 
 
-NICE TO HAVE 
+NICE TO HAVE:
 
-1) ....
-
+1) Tune movement
+2) More obstacles
 
 
 
