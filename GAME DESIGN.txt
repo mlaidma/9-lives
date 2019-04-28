@@ -3,7 +3,7 @@ GAME DESIGN
 NAME IDEAS
 
 * Kitty Extravagant
-* Kitty Spend Much
+* Kitty Spend Lives
 * 
 
 DESCRIPTION
@@ -86,6 +86,7 @@ NICE TO HAVE:
 
 1) Tune movement
 2) More obstacles
+3) Music and SFX
 
 
 
