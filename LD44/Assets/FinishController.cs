@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class VaseController : MonoBehaviour
+public class FinishController : MonoBehaviour
 {
-
-
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +20,9 @@ public class VaseController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag == "GotSmacked")
+        if(collision.collider.tag == "Player")
         {
-            Destroy(gameObject);
+            Debug.Log("Level Completed!");
         }
     }
 }

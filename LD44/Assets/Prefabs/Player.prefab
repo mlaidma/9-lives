@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 3312367042814013769}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   jumpForce: 8
   jumpGravity: 3
   livesRemainingText: {fileID: 0}
-  canSmack: 0
+  livesRemaining: 9
 --- !u!61 &6779516646438897095
 BoxCollider2D:
   m_ObjectHideFlags: 0

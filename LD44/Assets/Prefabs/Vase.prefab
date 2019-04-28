@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4468631875851393415}
   - component: {fileID: 6141420025548430530}
   - component: {fileID: 6900400791867871147}
+  - component: {fileID: 1568690654937684535}
   m_Layer: 0
-  m_Name: SmackableObstacle
-  m_TagString: Untagged
+  m_Name: Vase
+  m_TagString: SmackableObstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,3 +107,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9709233, y: 15.077386}
   m_EdgeRadius: 0
+--- !u!114 &1568690654937684535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568690654937684534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e5dae9a6c577e44803aa17c4da48c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

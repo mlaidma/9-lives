@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Floor
   - Obstacle
+  - SmackableObstacle
+  - GotSmacked
   layers:
   - Default
   - TransparentFX

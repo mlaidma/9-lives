@@ -12,18 +12,17 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpGravity = 3f;
 
     [SerializeField] TextMeshProUGUI livesRemainingText;
+    [SerializeField] int livesRemaining = 9;
 
-    [SerializeField] bool canSmack = false;
-    //bool canJump = false;
-    //bool canClimb = false;
+    bool canSmack = false;
+    bool canClimb = false;
 
     bool inAir = false;
-    int livesRemaining = 9;
-
 
     SpriteRenderer mySpriteRenderer;
     Rigidbody2D myRigidBody;
     Animator myAnimator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -61,16 +60,21 @@ public class Player : MonoBehaviour
 
             if(deltaX < 0f)
             {
+                myAnimator.SetBool("isWalking", true);
                 transform.localScale= new Vector2(-1, transform.localScale.y);
             }
-            else if (deltaX > 0f)
+            else if(deltaX > 0f)
             {
+                myAnimator.SetBool("isWalking", true);
                 transform.localScale = new Vector2(1, transform.localScale.y);
+            }
+            else
+            {
+                myAnimator.SetBool("isWalking", false);
             }
 
             myRigidBody.velocity = new Vector2(
                 Mathf.Clamp(currentVelocity.x + deltaX, -maxSpeed, maxSpeed), 0);
-
 
 
             if (Input.GetKeyDown(KeyCode.Space))
@@ -82,7 +86,6 @@ public class Player : MonoBehaviour
         else
         {
             var velocityY = myRigidBody.velocity.y;
-            Debug.Log(velocityY);
             if (velocityY < 2)
             {
                 myRigidBody.gravityScale = jumpGravity;
@@ -106,5 +109,24 @@ public class Player : MonoBehaviour
             inAir = true;
         }
     }
+    
+    public void AllowSmacking()
+    {
+        canSmack = true;
+    }
 
+    public void AllowClimbing()
+    {
+        canClimb = true;
+    }
+
+    public void IncreaseJumpForce(float boost)
+    {
+        jumpForce += boost;
+    }
+
+    public void IncreaseSpeed(float boost)
+    {
+        maxSpeed += boost;
+    }
 }
