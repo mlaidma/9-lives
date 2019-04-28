@@ -11,9 +11,6 @@ public class StoreObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     Image image;
 
     [SerializeField] StoreObjectText itemText;
- 
-
-    bool available = true;
 
     // Start is called before the first frame update
     void Start()
@@ -30,14 +27,10 @@ public class StoreObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     private void Buy()
     {
-        if(available)
-        {
-            SetAvailability(false);
-            store.Buy(gameObject.name);
-        }
+        store.Buy(this);
     }
 
-    private void SetAvailability(bool state)
+    public void SetVisibility(bool state)
     {
         if (state)
         {
@@ -47,8 +40,11 @@ public class StoreObject : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         {
             image.color = new Color(1f, 1f, 1f, 0.2f);
         }
+    }
 
-        available = state;
+    public StoreObjectText GetStoreObjectText()
+    {
+        return itemText;
     }
 
     public void OnPointerEnter(PointerEventData eventData)

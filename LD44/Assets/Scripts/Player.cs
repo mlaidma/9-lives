@@ -14,6 +14,12 @@ public class Player : MonoBehaviour
     [SerializeField] TextMeshProUGUI livesRemainingText;
     [SerializeField] int livesRemaining = 9;
 
+    [SerializeField] GameObject deadCat;
+    [SerializeField] GameObject spawnCatAt;
+
+    [SerializeField] SceneLoader sceneLoader;
+    
+
     bool canSmack = false;
     bool canClimb = false;
 
@@ -43,6 +49,8 @@ public class Player : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player dead");
+        sceneLoader.PlayerDied();
+
     }
 
     private void Smack()
@@ -101,6 +109,18 @@ public class Player : MonoBehaviour
         {
             inAir = false;
             myRigidBody.gravityScale = 1;
+        }
+
+        if(collision.collider.tag == "PoolDeath")
+        {
+            Debug.Log("Pool Death");
+            var curPos = transform.position;
+            var newPos = new Vector3(curPos.x, curPos.y - 0.3f, curPos.z);
+            Instantiate(deadCat, newPos, Quaternion.identity);
+            LoseLives(1);
+
+            myRigidBody.velocity = new Vector3(0f, 0f, 0f);
+            transform.position = spawnCatAt.transform.position;
         }
     }
 

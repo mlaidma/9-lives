@@ -9,13 +9,16 @@ public class SceneLoader : MonoBehaviour
     int sceneCount;
     int creditsScene;
     int currentScene;
+    int deathScene;
 
     // Start is called before the first frame update
     void Start()
     {
         sceneCount = SceneManager.sceneCountInBuildSettings;
         currentScene = SceneManager.GetActiveScene().buildIndex;
-        creditsScene = sceneCount - 1;
+        creditsScene = sceneCount - 2;
+        deathScene = sceneCount - 1;
+
     }
 
     // Update is called once per frame
@@ -46,6 +49,11 @@ public class SceneLoader : MonoBehaviour
     public void ReloadScene()
     {
         SceneManager.LoadScene(currentScene);
+    }
+
+    public void PlayerDied()
+    {
+        SceneManager.LoadScene(deathScene);
     }
 
     public void Quit()
