@@ -112,6 +112,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &10626095 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3312367042814013766, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
+    type: 3}
+  m_PrefabInstance: {fileID: 4540039926364450671}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2200b6850b7793945b25ccf7d572e979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &140822573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -353,7 +365,7 @@ PrefabInstance:
     - target: {fileID: 2671282901354700016, guid: 57afd6ebaf476d8498386302573654e1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0366675
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2671282901354700016, guid: 57afd6ebaf476d8498386302573654e1,
         type: 3}
@@ -756,6 +768,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4339408195149619822, guid: 2071f23827acbf8459d36085ab0e98f4,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339408195149619822, guid: 2071f23827acbf8459d36085ab0e98f4,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6897576315682223229, guid: 2071f23827acbf8459d36085ab0e98f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -861,16 +883,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4339408195149619822, guid: 2071f23827acbf8459d36085ab0e98f4,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339408195149619822, guid: 2071f23827acbf8459d36085ab0e98f4,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2144475624171194858, guid: 2071f23827acbf8459d36085ab0e98f4,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -891,6 +903,11 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5724704339553075512, guid: 2071f23827acbf8459d36085ab0e98f4,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 10626095}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2071f23827acbf8459d36085ab0e98f4, type: 3}
 --- !u!1001 &8977055621185906598
@@ -959,6 +976,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4723761175645155423, guid: 6a7c5eaad5444b0459106b4e34923d37,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a7c5eaad5444b0459106b4e34923d37, type: 3}

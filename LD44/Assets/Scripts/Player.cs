@@ -31,9 +31,6 @@ public class Player : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         livesRemainingText.text = livesRemaining.ToString();
-
-        //debug
-        canSmack = true;
     }
 
     // Update is called once per frame
@@ -41,6 +38,11 @@ public class Player : MonoBehaviour
     {
         Move();
         Smack();
+    }
+
+    private void Die()
+    {
+        Debug.Log("Player dead");
     }
 
     private void Smack()
@@ -109,13 +111,24 @@ public class Player : MonoBehaviour
             inAir = true;
         }
     }
+
+    public void LoseLives(int lives)
+    {
+        livesRemaining -= lives;
+        livesRemainingText.text = livesRemaining.ToString();
+
+        if(livesRemaining <= 0)
+        {
+            Die();
+        }
+    }
     
-    public void AllowSmacking()
+    public void EnableSmacking()
     {
         canSmack = true;
     }
 
-    public void AllowClimbing()
+    public void EnableClimbing()
     {
         canClimb = true;
     }

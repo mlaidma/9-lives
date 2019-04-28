@@ -59,9 +59,11 @@ TOYS
 TODO: 
 
 
-1) Buy the Toys
-	- Apply powerups
-	- decrement lives
++ 1) Buy the Toys
+	+ Apply powerups
+	+ decrement lives
+	- Make player die when lives == 0
+
 
 2) Create more levels
 	- Get to the other side
@@ -75,6 +77,9 @@ TODO:
 4) Credits
 
 5) Make the vase fall
+
+6) End screen
+
 
 
 NICE TO HAVE:

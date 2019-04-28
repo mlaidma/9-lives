@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5112571135675861986}
   m_Layer: 0
-  m_Name: AvailableLives
+  m_Name: RemainingLives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
