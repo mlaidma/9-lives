@@ -1169,12 +1169,6 @@ PrefabInstance:
       objectReference: {fileID: 2698273563163902893}
     - target: {fileID: 3312367042814013766, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
         type: 3}
-      propertyPath: deadCat
-      value: 
-      objectReference: {fileID: 4524813803678475751, guid: 39257a03f47acb5438412676e85fdb42,
-        type: 3}
-    - target: {fileID: 3312367042814013766, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
-        type: 3}
       propertyPath: spawnCatAt
       value: 
       objectReference: {fileID: 574347853}

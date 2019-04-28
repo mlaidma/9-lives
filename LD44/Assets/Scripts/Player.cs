@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI livesRemainingText;
     [SerializeField] int livesRemaining = 9;
+    [SerializeField] float walkVolume = 0.1f;
 
     [SerializeField] GameObject deadCat;
     [SerializeField] GameObject spawnCatAt;
@@ -24,10 +25,12 @@ public class Player : MonoBehaviour
     bool canClimb = false;
 
     bool inAir = false;
+    bool isWalking = false;
 
     SpriteRenderer mySpriteRenderer;
     Rigidbody2D myRigidBody;
     Animator myAnimator;
+    AudioSource myAudio;
 
 
     // Start is called before the first frame update
@@ -36,6 +39,8 @@ public class Player : MonoBehaviour
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        myAudio = GetComponent<AudioSource>();
+        myAudio.volume = walkVolume;
         livesRemainingText.text = livesRemaining.ToString();
     }
 
@@ -70,17 +75,17 @@ public class Player : MonoBehaviour
 
             if(deltaX < 0f)
             {
-                myAnimator.SetBool("isWalking", true);
+                SetPlayerMoving(true);
                 transform.localScale= new Vector2(-1, transform.localScale.y);
             }
             else if(deltaX > 0f)
             {
-                myAnimator.SetBool("isWalking", true);
+                SetPlayerMoving(true);
                 transform.localScale = new Vector2(1, transform.localScale.y);
             }
             else
             {
-                myAnimator.SetBool("isWalking", false);
+                SetPlayerMoving(false);
             }
 
             myRigidBody.velocity = new Vector2(
@@ -100,8 +105,26 @@ public class Player : MonoBehaviour
             {
                 myRigidBody.gravityScale = jumpGravity;
             }
+
+            myAudio.Pause();
         }
     }
+
+    private void SetPlayerMoving(bool state)
+    {
+        isWalking = state;
+        myAnimator.SetBool("isWalking", state);
+
+        if(state)
+        {
+            myAudio.UnPause();
+        }
+        else
+        {
+            myAudio.Pause();
+        }
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

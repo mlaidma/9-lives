@@ -422,7 +422,7 @@ PrefabInstance:
     - target: {fileID: 2671282901354700016, guid: 57afd6ebaf476d8498386302573654e1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.29
+      value: -2.975
       objectReference: {fileID: 0}
     - target: {fileID: 2671282901354700016, guid: 57afd6ebaf476d8498386302573654e1,
         type: 3}
@@ -477,7 +477,7 @@ PrefabInstance:
     - target: {fileID: 2671282901354700016, guid: 57afd6ebaf476d8498386302573654e1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0142213
+      value: 1.2596629
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57afd6ebaf476d8498386302573654e1, type: 3}
@@ -582,12 +582,12 @@ PrefabInstance:
     - target: {fileID: 2671282901354700016, guid: 57afd6ebaf476d8498386302573654e1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.85
+      value: -8.6
       objectReference: {fileID: 0}
     - target: {fileID: 2671282901354700016, guid: 57afd6ebaf476d8498386302573654e1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.29
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 2671282901354700016, guid: 57afd6ebaf476d8498386302573654e1,
         type: 3}
@@ -1099,6 +1099,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3312367042814013766, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
+        type: 3}
+      propertyPath: livesRemainingText
+      value: 
+      objectReference: {fileID: 2698273563163902893}
     - target: {fileID: 4147306151626280120, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1154,11 +1159,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3312367042814013766, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
-        type: 3}
-      propertyPath: livesRemainingText
-      value: 
-      objectReference: {fileID: 2698273563163902893}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda, type: 3}
 --- !u!1001 &6897576315413828879

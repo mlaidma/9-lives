@@ -85,7 +85,7 @@ NICE TO HAVE:
 
 1) Tune movement
 2) More obstacles
-3) Music and SFX
++ 3) Music and SFX
 
 
 
