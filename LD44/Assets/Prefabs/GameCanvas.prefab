@@ -362,7 +362,7 @@ MonoBehaviour:
   storeItemDescription: {fileID: 668890243351689739}
   player: {fileID: 0}
   jumpBoost: 4
-  speedBoost: 4
+  speedBoost: 1.5
   powerUpPrice: 2
 --- !u!114 &8223022001970228875
 MonoBehaviour:

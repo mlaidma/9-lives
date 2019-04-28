@@ -63,6 +63,7 @@ TODO:
 	+ Apply powerups
 	+ decrement lives
 	- Make player die when lives == 0
+	- Only one purchase per level
 
 
 2) Create more levels
@@ -71,14 +72,12 @@ TODO:
 			- Animations to drown
 	- Cross the road
 
-3) Start Screen
-	- With tutorials
++ 3) Start Screen
+	+ With tutorials
 
-4) Credits
+* 4) Credits
 
 5) Make the vase fall
-
-6) End screen
 
 
 
