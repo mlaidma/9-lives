@@ -29,6 +29,11 @@ public class SceneLoader : MonoBehaviour
             Debug.Log("Scene Reload");
             ReloadScene();
         }
+
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            LoadMainMenu();
+        }
     }
 
     public void LoadNextScene()
