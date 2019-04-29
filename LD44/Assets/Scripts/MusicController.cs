@@ -25,7 +25,7 @@ public class MusicController : MonoBehaviour
     {
         Invoke("StartBackgroundMusic", 5f);
         meowClipCount = meowClips.Length;
-        Invoke("PlayMeow", 10f);
+        Invoke("PlayMeow", 8f);
     }
 
     // Update is called once per frame
@@ -45,7 +45,7 @@ public class MusicController : MonoBehaviour
         if(randomMeowEnabled)
         {
             int clipIndex = UnityEngine.Random.Range(0, meowClipCount);
-            float nextClipInterval = UnityEngine.Random.Range(15f, 20f);
+            float nextClipInterval = UnityEngine.Random.Range(6f, 12f);
 
             audioSource.PlayOneShot(meowClips[clipIndex], meowVolume);
             Invoke("PlayMeow", nextClipInterval);

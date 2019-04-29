@@ -937,6 +937,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3312367042814013766, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
+        type: 3}
+      propertyPath: livesRemainingText
+      value: 
+      objectReference: {fileID: 2698273563163902893}
+    - target: {fileID: 3312367042814013766, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
+        type: 3}
+      propertyPath: smackVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4147306151626280120, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -992,11 +1002,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3312367042814013766, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda,
-        type: 3}
-      propertyPath: livesRemainingText
-      value: 
-      objectReference: {fileID: 2698273563163902893}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e70110cb67bcd4b8cd5b02a0e4fbda, type: 3}
 --- !u!1001 &5167961795152271235

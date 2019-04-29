@@ -255,7 +255,9 @@ MonoBehaviour:
 
     Graphics handrawn, scanned and retouched in Photoshop
 
-    Music and SFX recorded with https://midi.city/ and Audacity
+    Music and SFX created with vocals, Audacity,
+
+    https://midi.city/ and https://www.tones.fm/.
 
 
     Thanks for playing! :)'
@@ -305,7 +307,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 178
+  m_firstOverflowCharacterIndex: 208
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -328,12 +330,12 @@ MonoBehaviour:
   m_margin: {x: -760.4918, y: -432.45325, z: -677.0349, w: 0}
   m_textInfo:
     textComponent: {fileID: 628796504}
-    characterCount: 200
+    characterCount: 231
     spriteCount: 0
-    spaceCount: 31
-    wordCount: 31
+    spaceCount: 33
+    wordCount: 36
     linkCount: 0
-    lineCount: 7
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0

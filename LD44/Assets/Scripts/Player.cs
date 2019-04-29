@@ -13,7 +13,10 @@ public class Player : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI livesRemainingText;
     [SerializeField] int livesRemaining = 9;
-    [SerializeField] float walkVolume = 0.1f;
+    [SerializeField] float walkVolume = 0.8f;
+    [SerializeField] float smackVolume = 1f;
+    [SerializeField] AudioClip smackClip;
+
 
     [SerializeField] GameObject deadCat;
     [SerializeField] GameObject spawnCatAt;
@@ -54,7 +57,11 @@ public class Player : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player dead");
-        sceneLoader.PlayerDied();
+        if(sceneLoader != null)
+        {
+            sceneLoader.PlayerDied();
+        }
+
 
     }
 
@@ -63,6 +70,7 @@ public class Player : MonoBehaviour
         if(Input.GetButtonDown("Fire1") && canSmack)
         {
             myAnimator.SetTrigger("smack");
+            myAudio.PlayOneShot(smackClip, smackVolume);
         }
     }
 
@@ -143,7 +151,10 @@ public class Player : MonoBehaviour
             LoseLives(1);
 
             myRigidBody.velocity = new Vector3(0f, 0f, 0f);
-            transform.position = spawnCatAt.transform.position;
+            if(spawnCatAt != null)
+            {
+                transform.position = spawnCatAt.transform.position;
+            }
         }
     }
 
