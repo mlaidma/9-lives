@@ -490,7 +490,7 @@ MonoBehaviour:
 
 
     Move with A and D, jump with Space, Smack with Left Ctrl. Reload the level with
-    R.
+    R. Go back to Menu with M
 
 
     Sometimes you might get stuck on a platform. In that case reload the level :)
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 541
+  m_firstOverflowCharacterIndex: 564
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -566,10 +566,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -907.1238, w: -903.12085}
   m_textInfo:
     textComponent: {fileID: 1337605509}
-    characterCount: 550
+    characterCount: 573
     spriteCount: 0
-    spaceCount: 111
-    wordCount: 106
+    spaceCount: 117
+    wordCount: 112
     linkCount: 0
     lineCount: 18
     pageCount: 1
