@@ -1093,16 +1093,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 4339408195149619822, guid: 2071f23827acbf8459d36085ab0e98f4,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339408195149619822, guid: 2071f23827acbf8459d36085ab0e98f4,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6897576315682223229, guid: 2071f23827acbf8459d36085ab0e98f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1208,39 +1198,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2144475624171194858, guid: 2071f23827acbf8459d36085ab0e98f4,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2144475624171194858, guid: 2071f23827acbf8459d36085ab0e98f4,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9171203295454424998, guid: 2071f23827acbf8459d36085ab0e98f4,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9171203295454424998, guid: 2071f23827acbf8459d36085ab0e98f4,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5724704339553075512, guid: 2071f23827acbf8459d36085ab0e98f4,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 10626095}
-    - target: {fileID: 244822560, guid: 2071f23827acbf8459d36085ab0e98f4, type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 244822560, guid: 2071f23827acbf8459d36085ab0e98f4, type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2071f23827acbf8459d36085ab0e98f4, type: 3}
 --- !u!1001 &8977055621185906598

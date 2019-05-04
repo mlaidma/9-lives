@@ -1,16 +1,24 @@
 fileFormatVersion: 2
-guid: e5d14ea26446cb848a5d3e668dbcb610
+guid: 3d6e7daf37d53284fb977d73142934a0
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: PlayerIdleAnimationSheet_0
-    21300002: PlayerIdleAnimationSheet_1
-    21300004: PlayerIdleAnimationSheet_2
-    21300006: PlayerIdleAnimationSheet_3
-    21300008: PlayerIdleAnimationSheet_4
-    21300010: PlayerIdleAnimationSheet_5
-    21300012: PlayerIdleAnimationSheet_6
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: PlayerSmackAnimationSheet_0
+  - first:
+      213: 21300002
+    second: PlayerSmackAnimationSheet_1
+  - first:
+      213: 21300004
+    second: PlayerSmackAnimationSheet_2
+  - first:
+      213: 21300006
+    second: PlayerSmackAnimationSheet_3
+  - first:
+      213: 21300008
+    second: PlayerSmackAnimationSheet_4
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -113,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerIdleAnimationSheet_0
+      name: PlayerSmackAnimationSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -127,13 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6553fa4dea3fe0d4bba4321b48e79b8d
+      spriteID: e04dc621859414f4aae5cee3ecb18569
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleAnimationSheet_1
+      name: PlayerSmackAnimationSheet_1
       rect:
         serializedVersion: 2
         x: 256
@@ -147,13 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b33320b1117a1d41b2b8db6382a2817
+      spriteID: fe65a4d39e2714e4aa3b495348f78829
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleAnimationSheet_2
+      name: PlayerSmackAnimationSheet_2
       rect:
         serializedVersion: 2
         x: 512
@@ -167,13 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22b2b37d7a156fc41946d1ec76018100
+      spriteID: fc4577b93f0e38347860282956d1a2d5
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleAnimationSheet_3
+      name: PlayerSmackAnimationSheet_3
       rect:
         serializedVersion: 2
         x: 768
@@ -187,13 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 114ef46f91a87a94ebae73a769443e7a
+      spriteID: 206805dd159575a49b059c8d92404ed9
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerIdleAnimationSheet_4
+      name: PlayerSmackAnimationSheet_4
       rect:
         serializedVersion: 2
         x: 1024
@@ -207,47 +219,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80ae5da2fcf2d984b9394545adcd2cf5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerIdleAnimationSheet_5
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87590fc02fb6c6d4b978fba233b850d3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerIdleAnimationSheet_6
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6ef44f22367313409bba12f2b7553cc
+      spriteID: fe731b50a1a58ff4983c68020cde251d
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -255,11 +228,13 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 49a047293701afa4f92491af268fd608
+    spriteID: 329d55f7b33f86242a7a04cff28efa2c
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
